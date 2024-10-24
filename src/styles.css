@@ -1,25 +1,106 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  nav {
-    background-color: #333;
-    padding: 1rem;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin: 0 1rem;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
+
+html{
+  scroll-behavior: smooth;
+}
+
+section {
+  margin-top: -90px;
+  padding-top: 90px; /* Adjust this value based on your navbar height */
+}
+
+
+body{
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+nav{
+  background-color: black;
+  border: 2px solid rgb(30, 241, 30);
+  padding: 1rem;
+  position: sticky;
+  top: 0; /* Sticks the navbar to the top */
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li{
+  margin: 0 auto;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+
+.home, .about, .skills, .projects, .contact {
+  padding: 20px
+}
+
+/*home page styles*/
+
+.home{
+  background-color: black;
+  height: 500px;
+}
+
+/*about page styles*/
+
+.about{
+  background-color: blue;
+  height: 500px;
+}
+
+
+/*Skills page css*/
+
+.skills{
+  background-color: orange;
+  height: 500px;
+}
+/*projects page css*/
+.projects{
+  background-color: violet;
+  height: 500px;
+}
+
+/*contact page css*/
+.contact{
+  background-color: green;
+  height: 500px;
+}
+/*name-typing*/
+
+.name-typing{
+  font-size: larger;
+  font-weight: 100;
+
+}
+
+/*name image styles*/
+
+.name-image{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-content{
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content{
+  width: 50%;
+  height: 100%;
+}
