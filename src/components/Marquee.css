@@ -1,0 +1,27 @@
+/* Marquee.css */
+
+.marquee {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .marquee-content {
+    display: inline-block; /* Allow horizontal layout */
+    animation: marquee 20s linear infinite; /* Animation properties */
+  }
+  
+  .marquee img {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 100px; /* Space between images */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0); /* Start at the beginning */
+    }
+    100% {
+      transform: translateX(-70%); /* Move left by half the total width of the images */
+    }
+  }

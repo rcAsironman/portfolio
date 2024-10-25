@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { react, reactNative, java, node } from "../paths.ts"; // Ensure these paths are valid
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { getIndex, useFlubber } from "../use-flubber.ts";
+import Marquee from './Marquee.js';
 
 const paths = [react, reactNative, java, node];
 const colors = [
@@ -34,12 +35,7 @@ function Skills() {
 
   return (
     <div className='skills'>
-      <h2>Skills</h2>
-      <svg width="400" height="400">
-        <g transform="translate(10 10) scale(17 17)">
-          <motion.path fill={fill} d={path} />
-        </g>
-      </svg>
+      <Marquee/>
     </div>
   );
 }
