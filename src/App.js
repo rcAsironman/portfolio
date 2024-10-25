@@ -10,6 +10,7 @@ import './styles.css';
 import AllComp from './components/AllComp';
 
 const basename = process.env.REACT_APP_BASENAME || ""
+
 function App() {
   return (
     <Router basename={basename}>
