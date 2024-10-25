@@ -9,9 +9,10 @@ import Contact from './components/Contact';
 import './styles.css';
 import AllComp from './components/AllComp';
 
+const basename = process.env.REACT_APP_BASENAME || ""
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
         <Navbar />
         <Routes>
           <Route path="/" element={<AllComp/>} />
