@@ -9,17 +9,13 @@ function NameImage() {
 
       <div className='left-content'>
         <div className='left-content-child'>
-        <h3 className='WelcomeNote'>Welcome to My Portfolio</h3>
-        <h2 className="name-typing">
-          <Typewriter
-            text="My name is karthik..."
-            cursorColor="#000"
-            typeSpeed={100}
-            startDelay={100}
-            deleteSpeed={50}
-            loop={true}
-          />
-        </h2>
+        <h3 className='WelcomeNote animated-welcome-text'>Welcome to My Portfolio</h3>
+        <h3>
+        Myself karthik Mangineni
+        </h3>
+        <h6 className="name-typing">
+          Masters of Science in Computer Science at Saint Louis University.
+        </h6>
         </div>
       </div>
 

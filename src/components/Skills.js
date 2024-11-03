@@ -35,6 +35,7 @@ function Skills() {
 
   return (
     <div className='skills'>
+      <h3>Areas of Expertise</h3>
       <Marquee/>
     </div>
   );
