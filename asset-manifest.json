@@ -1,26 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b56ff0d3.css",
-    "main.js": "/portfolio/static/js/main.2ffae9c9.js",
-    "static/media/reactJs.png": "/portfolio/static/media/reactJs.2f2532db663fd5ec5f95.png",
-    "static/media/postgre.png": "/portfolio/static/media/postgre.643d40d11f764b9df1fe.png",
-    "static/media/gitHub.png": "/portfolio/static/media/gitHub.10fb52bfd2752e8b23c0.png",
+    "main.css": "/portfolio/static/css/main.dcae7cc8.css",
+    "main.js": "/portfolio/static/js/main.7336b586.js",
     "static/media/portfolioImage.png": "/portfolio/static/media/portfolioImage.a7a7aa210ea5fb04d229.png",
-    "static/media/htmlCssJavascript.png": "/portfolio/static/media/htmlCssJavascript.23664151b983fe1a70a3.png",
-    "static/media/aws.png": "/portfolio/static/media/aws.e901bc3397ff5cdfd815.png",
-    "static/media/java.png": "/portfolio/static/media/java.4e332879122f609caa57.png",
-    "static/media/mysql.png": "/portfolio/static/media/mysql.9a8c4ff3165dc6d96ba4.png",
-    "static/media/c.png": "/portfolio/static/media/c.83dfa097dfa94f707a41.png",
-    "static/media/c++.png": "/portfolio/static/media/c++.1240ce157b70fb399c6c.png",
-    "static/media/python.png": "/portfolio/static/media/python.f1a07429fcf04073a41e.png",
-    "static/media/redux.png": "/portfolio/static/media/redux.1edba70acbe0a2484e24.png",
-    "static/media/nodeJs.png": "/portfolio/static/media/nodeJs.c580880cda32187e07e1.png",
     "index.html": "/portfolio/index.html",
-    "main.b56ff0d3.css.map": "/portfolio/static/css/main.b56ff0d3.css.map",
-    "main.2ffae9c9.js.map": "/portfolio/static/js/main.2ffae9c9.js.map"
+    "main.dcae7cc8.css.map": "/portfolio/static/css/main.dcae7cc8.css.map",
+    "main.7336b586.js.map": "/portfolio/static/js/main.7336b586.js.map"
   },
   "entrypoints": [
-    "static/css/main.b56ff0d3.css",
-    "static/js/main.2ffae9c9.js"
+    "static/css/main.dcae7cc8.css",
+    "static/js/main.7336b586.js"
   ]
 }
