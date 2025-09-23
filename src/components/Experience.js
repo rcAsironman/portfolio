@@ -4,23 +4,41 @@ import { motion } from 'framer-motion';
 function Experience() {
   const experiences = [
     {
-      title: 'Technical Lead',
-      company: 'Open Source with SLU',
-      period: 'Aug 2024 - Present',
+      title: 'Software Developer Intern',
+      company: 'UCSF LIN Lab (Remote)',
+      period: 'Jan 2025 – Present',
       responsibilities: [
-        'Led the development of "Where\'s Religion" using React Native & Expo',
-        'Managed a team and optimized backend APIs using Spring Boot',
-        'Implemented CI/CD pipelines and code review processes'
+        'Developed SoundWell mobile app for patients with congestive heart disease and cleft palate to record audio of target sentences for AI analysis',
+        'Used React Native, Firebase backend, Zustand state management, and Figma for UI/UX design'
       ]
     },
     {
-      title: 'Trainee Software Engineer',
-      company: 'TecheFolks',
-      period: 'Dec 2022 - Jun 2023',
+      title: 'Founder & Full Stack Developer',
+      company: 'ShipMyPack (Proprietorship) – India',
+      period: 'May 2025 – Present',
       responsibilities: [
-        'Built and deployed Unaga Mobile App using Flutter',
-        'Assisted in Spring Boot API development',
-        'Collaborated with cross-functional teams for feature implementation'
+        'Built a peer-to-peer logistics platform using React Native, NestJS, Firebase, and PostgreSQL',
+        'Implemented real-time notifications, OTP authentication, secure payments, and smooth UI across devices'
+      ]
+    },
+    {
+      title: 'Graduate Student Worker',
+      company: 'Saint Louis University – St. Louis, MO',
+      period: 'Aug 2024 – Aug 2025',
+      responsibilities: [
+        'Redesigned and developed Where’s Religion mobile app (Expo, iOS/Android) from Figma designs',
+        'Fixed authentication and theme flow using Redux + Context API',
+        'Improved video playback by fixing Vimeo delays and implementing state-based auto-play in InnerPeace app',
+        'Contributed to UI/UX improvements, feature enhancements, and bug fixes for multiple React Native apps'
+      ]
+    },
+    {
+      title: 'Trainee Software Engineer (Intern)',
+      company: 'TechEFolks – Madhapur, India',
+      period: 'Dec 2022 – Jun 2023',
+      responsibilities: [
+        'Assisted in full-stack development, debugging, and feature implementation',
+        'Collaborated with an agile team for project deliverables'
       ]
     }
   ];

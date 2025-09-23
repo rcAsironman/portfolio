@@ -4,6 +4,28 @@ import { Github } from 'lucide-react';
 
 function Projects() {
   const projects = [
+    // Resume projects (no GitHub links)
+    {
+      title: 'Just a Second Connector',
+      description: 'Social good project giving people a second chance in life. Served as Tech Lead, UX Designer, and Developer.',
+      tech: ['React', 'Express']
+    },
+    {
+      title: 'Chat Application',
+      description: 'Real-time chat platform using socket programming. Users can register, select regions, and chat instantly.',
+      tech: ['Socket Programming', 'Java']
+    },
+    {
+      title: 'Multi-Messaging App',
+      description: 'Multi-account messaging application built with React Native (Expo) enabling smooth messaging across WhatsApp accounts.',
+      tech: ['React Native', 'Expo']
+    },
+    {
+      title: 'Reminder App',
+      description: 'Reminder and scheduling app built with React Native, enabling notifications and task management with a clean UI.',
+      tech: ['React Native']
+    },
+    // Other projects
     {
       title: 'Weather App',
       description: 'Real-time weather application built with Angular and Weather API integration.',
@@ -67,12 +89,14 @@ function Projects() {
                     <span key={tech} className="skill-tag">{tech}</span>
                   ))}
                 </div>
-                <div>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-                    <Github size={20} />
-                    View Code
-                  </a>
-                </div>
+                {project.github && (
+                  <div>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                      <Github size={20} />
+                      View Code
+                    </a>
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>
@@ -82,4 +106,4 @@ function Projects() {
   );
 }
 
-export default Projects
+export default Projects;

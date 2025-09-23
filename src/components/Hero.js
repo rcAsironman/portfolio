@@ -11,7 +11,7 @@ function Hero() {
   const resumeUrl = process.env.PUBLIC_URL + '/Karthik_Resume.pdf';
 
   return (
-    <section className="section" style={{ 
+    <section className="section" style={{
       minHeight: '100vh',
       display: 'flex',
       alignItems: 'center',
@@ -29,18 +29,19 @@ function Hero() {
                 Karthik Mangineni
               </h1>
               <h2 style={{ fontSize: '1.5rem', color: 'var(--secondary-text)', marginBottom: '2rem' }}>
-                Full Stack Developer | Angular | React | Flutter | Spring Boot |
+                Full Stack Developer | React | React Native | NativeWind | Node.js | Express | NestJS | Flask
               </h2>
               <h2 style={{ fontSize: '1.5rem', color: 'var(--secondary-text)', marginBottom: '2rem' }}>
-                 Java | Spring Boot 
+                Java | JavaScript | Python | C++ | PostgreSQL | MySQL | MongoDB | Firebase | AWS | Docker
               </h2>
+
               <div style={{ display: 'flex', gap: '1rem' }}>
-               <a href={resumeUrl} download="Karthik_Mangineni_Resume.pdf">
-               <button className="btn btn-primary">
-                  <Download size={20} />
-                  Download Resume
-                </button>
-               </a>
+                <a href={resumeUrl} download="Karthik_Mangineni_Resume.pdf">
+                  <button className="btn btn-primary">
+                    <Download size={20} />
+                    Download Resume
+                  </button>
+                </a>
                 <button className="btn btn-outline" onClick={scrollToContact}>
                   <Mail size={20} />
                   Contact Me
@@ -48,7 +49,7 @@ function Hero() {
               </div>
             </div>
             <div style={{ flex: 1 }}>
-              <img 
+              <img
                 src={karthikImage}
                 alt="Karthik Mangineni"
                 style={{

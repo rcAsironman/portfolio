@@ -17,7 +17,7 @@ function About() {
               <p style={{ fontSize: '1.125rem', lineHeight: 1.7, marginBottom: '2rem' }}>
                 I am a passionate Full Stack Developer with expertise in building modern web and mobile applications.
                 Currently pursuing my Master's in Computer Science at Saint Louis University, I combine academic
-                excellence with practical experience in developing robust applications using React, Java Spring Boot,
+                excellence with practical experience in developing robust applications using React, React Native, NestJs, Java Spring Boot,
                 and various other technologies.
               </p>
             </div>
