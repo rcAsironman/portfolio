@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, Mail } from 'lucide-react';
-import karthikImage from "../assets/portfolioImage.png"
+import karthikImage from "../assets/portfolioImage.png";
+
 function Hero() {
   const scrollToContact = () => {
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
@@ -11,31 +12,47 @@ function Hero() {
   const resumeUrl = process.env.PUBLIC_URL + '/Karthik_Resume.pdf';
 
   return (
-    <section className="section" style={{
-      minHeight: '100vh',
-      display: 'flex',
-      alignItems: 'center',
-      paddingTop: '5rem'
-    }}>
+    <section
+      className="section"
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        paddingTop: '5rem'
+      }}
+    >
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div style={{ display: 'flex', gap: '4rem', alignItems: 'center' }}>
-            <div>
-              <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '1rem' }}>
+          {/* ===== Profile Section ===== */}
+          <div
+            className="hero-container"
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '4rem',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginBottom: '4rem'
+            }}
+          >
+            {/* Text Block */}
+            <div style={{ flex: 1, minWidth: '300px', maxWidth: '600px' }}>
+              <h1
+                style={{
+                  fontSize: '3rem',
+                  fontWeight: 700,
+                  marginBottom: '1.5rem'
+                }}
+              >
                 Karthik Mangineni
               </h1>
-              <h2 style={{ fontSize: '1.5rem', color: 'var(--secondary-text)', marginBottom: '2rem' }}>
-                Full Stack Developer | React | React Native | NativeWind | Node.js | Express | NestJS | Flask
-              </h2>
-              <h2 style={{ fontSize: '1.5rem', color: 'var(--secondary-text)', marginBottom: '2rem' }}>
-                Java | JavaScript | Python | C++ | PostgreSQL | MySQL | MongoDB | Firebase | AWS | Docker
-              </h2>
 
-              <div style={{ display: 'flex', gap: '1rem' }}>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href={resumeUrl} download="Karthik_Mangineni_Resume.pdf">
                   <button className="btn btn-primary">
                     <Download size={20} />
@@ -48,23 +65,33 @@ function Hero() {
                 </button>
               </div>
             </div>
-            <div style={{ flex: 1 }}>
+
+            {/* Profile Image */}
+            <div
+              style={{
+                flex: 1,
+                display: 'flex',
+                justifyContent: 'center',
+                minWidth: '300px'
+              }}
+            >
               <img
                 src={karthikImage}
                 alt="Karthik Mangineni"
                 style={{
                   width: '100%',
-                  maxWidth: '400px',
+                  maxWidth: '550px',
                   borderRadius: '2rem',
                   objectFit: 'cover'
                 }}
               />
             </div>
           </div>
+
         </motion.div>
       </div>
     </section>
   );
 }
 
-export default Hero
+export default Hero;
